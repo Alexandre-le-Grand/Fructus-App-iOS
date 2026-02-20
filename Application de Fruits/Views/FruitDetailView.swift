@@ -82,21 +82,9 @@ struct FruitDetailView: View {
                             .font(.body)
                             .lineSpacing(6)
                             .foregroundColor(.secondary)
-                        
-                        Link(destination: URL(string: "https://wikipedia.org")!) {
-                            HStack {
-                                Text("Source Wikipedia")
-                                Image(systemName: "arrow.up.right.circle")
-                            }
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(fruit.gradientColors[1])
-                            .foregroundColor(.white)
-                            .clipShape(Capsule())
-                        }
-                        .padding(.top, 20)
                     }
                     .padding(30)
+                    .padding(.bottom, 50)
                     .background(Color(.systemBackground))
                     .cornerRadius(40, corners: [.topLeft, .topRight])
                 }
